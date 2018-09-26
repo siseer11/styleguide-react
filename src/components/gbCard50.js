@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 import { GbCardLabel } from "./gbCardLabel";
 
-export const GbCard50 = ({ background, type , source , postedTime , category }) => (
+export const GbCard50 = ({ background, type , source , postedTime , category , children}) => (
   <div
     className={`gb-card-12 ${
       type == "half-left" ? "gb-card-12-image-left" : "gb-card-12-image-right"
@@ -18,7 +18,7 @@ export const GbCard50 = ({ background, type , source , postedTime , category }) 
           type === "full" ? "gb-desktop-text-white gb-desktop-title-large" : ""
         }`}
       >
-        Arctic sea ice extent hits record low for winter maximum
+        {children}
       </h1>
       <GbCardLabel
         txtColor={`gb-text-black ${
@@ -41,4 +41,5 @@ GbCard50.propTypes = {
   source : PropTypes.string.isRequired,
   postedTime : PropTypes.string.isRequired,
   category : PropTypes.string.isRequired,
+  children : PropTypes.string.isRequired,
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import {NavAsideLink} from './navAsideLink';
 import PropTypes from 'prop-types';
-import {Close} from '../svgs/svgs';
+import {Close} from '../svgs/CloseSVG';
 
 export const GbNavAside = ({links , userName, userImageUrl}) => (
 
@@ -41,14 +41,3 @@ GbNavAside.propTypes = {
   userImageUrl : PropTypes.string.isRequired,
   links : PropTypes.arrayOf(PropTypes.object).isRequired
 }
-
-/*
-<li className="nav-aside-top-list-item">
-            <a className="nav-aside-link gb-text-white" href="#">
-
-              <h5 className="gb-text-uppercase gb-text-white gb-title-tiny">CHANNELS</h5>
-            </a>
-        </li>
-
-<img className="gb-avatar gb-avatar-medium" src="../images/profile.jpg" alt="avatar">
-        */

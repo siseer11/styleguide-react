@@ -1,5 +1,6 @@
 import React from "react";
-import { BurgerMenu, SmallLogo } from "../svgs/svgs";
+import {BurgerMenu} from '../svgs/BurgerMenuSVG';
+import {SmallLogo} from '../svgs/SmallLogoSVG'
 
 export const GbNavBar = props => (
   <div className="gb-navbar gb-background-primary">

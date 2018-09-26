@@ -1,5 +1,6 @@
 import React from "react";
-import { Source, Clock } from "../svgs/svgs";
+import {Source} from '../svgs/SourceSVG';
+import {Clock} from '../svgs/ClockSVG';
 import PropTypes from 'prop-types';
 
 export const GbCardLabel = ({ iconColor, txtColor , source , time , category}) => (

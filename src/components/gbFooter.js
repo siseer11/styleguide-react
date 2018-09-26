@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types'
-import { Twitter , Instagram , Facebook } from '../svgs/svgs'
+import {Twitter} from '../svgs/TwitterSVG';
+import {Instagram} from '../svgs/InstagramSVG';
+import {Facebook} from '../svgs/FacebookSVG';
 
 /* links = [{'txt' : 'About us' , 'link' : '#'}] */
 export const GbFooter = ({links}) => ( 
