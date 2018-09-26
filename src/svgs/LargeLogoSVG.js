@@ -1,8 +1,8 @@
 import React from "react";
 
-export const LargeLogo = ({ myClases }) => (
+export const LargeLogoSVG = ({ classes }) => (
   <svg
-    className={myClases}
+    className={classes}
     id="gb-logo-large"
     viewBox="0 0 101 13"
     width="100%"

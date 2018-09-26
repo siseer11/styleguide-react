@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types'
-import {Twitter} from '../svgs/TwitterSVG';
-import {Instagram} from '../svgs/InstagramSVG';
-import {Facebook} from '../svgs/FacebookSVG';
+import {TwitterSVG} from '../svgs/TwitterSVG';
+import {InstagramSVG} from '../svgs/InstagramSVG';
+import {FacebookSVG} from '../svgs/FacebookSVG';
 
 /* links = [{'txt' : 'About us' , 'link' : '#'}] */
 export const GbFooter = ({links}) => ( 
@@ -20,17 +20,17 @@ export const GbFooter = ({links}) => (
       <ul className="footer-social-media-list">
       <li className="footer-social-media-item">
         <a href="#">
-          <Facebook myClases='gb-icon-fill-black-opacity-30 gb-icon-small'/>
+          <FacebookSVG classes='gb-icon-fill-black-opacity-30 gb-icon-small'/>
         </a>
       </li>
       <li className="footer-social-media-item">
         <a href="#">
-          <Instagram myClases='gb-icon-fill-black-opacity-30 gb-icon-small'/>
+          <InstagramSVG classes='gb-icon-fill-black-opacity-30 gb-icon-small'/>
         </a>
       </li>
       <li className="footer-social-media-item">
         <a href="#">
-          <Twitter myClases='gb-icon-fill-black-opacity-30 gb-icon-small'/>
+          <TwitterSVG classes='gb-icon-fill-black-opacity-30 gb-icon-small'/>
         </a>
       </li>
       </ul>

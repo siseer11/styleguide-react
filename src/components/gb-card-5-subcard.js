@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { BookmarkSVG } from './svgs/BookmarkSVG';
+import { BookMarksSVG } from '../svgs/BookMarksSVG';
 import '../style/gb-style.css';
 
 export const CardFiveList = ({ title, time, topic, url }) => {
@@ -9,7 +9,7 @@ export const CardFiveList = ({ title, time, topic, url }) => {
 
     <li className="gb-card-five-card">
       <div className="gb-card-five-card-icon">
-        <BookmarkSVG classes="gb-card-five-card-bookmark-icon" />
+        <BookMarksSVG classes="gb-card-five-card-bookmark-icon" />
       </div>
       <div className="gb-card-five-card-content">
         <div className="gb-card-five-card-title-time">

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ClockSVG } from './svgs/ClockSVG';
-import { SourceSVG } from './svgs/SourceSVG';
+import { ClockSVG } from '../svgs/ClockSVG';
+import { SourceSVG } from '../svgs/SourceSVG';
 import '../style/gb-style.css';
 
 export const CardFourList = ({ heading, source, date, image }) => {

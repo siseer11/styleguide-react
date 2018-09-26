@@ -1,9 +1,9 @@
 import React from "react";
 
-export const Clock = ({ myClases }) => {
+export const ClockSVG = ({ classes }) => {
   return (
     <svg
-      className={myClases}
+      className={classes}
       id="clock"
       viewBox="0 0 30 30"
       width="100%"

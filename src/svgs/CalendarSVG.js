@@ -1,7 +1,7 @@
 import React from "react";
 
-export const Calendar = ({myClases}) => (
-  <svg className={myClases} id="calendar" viewBox="0 0 50 50" width="100%" height="100%">
+export const CalendarSVG = ({classes}) => (
+  <svg className={classes} id="calendar" viewBox="0 0 50 50" width="100%" height="100%">
       <title>calendar</title>
       <g>
         <path d="M1 2C1 1.44772 1.44772 1 2 1H42C42.5523 1 43 1.44772 43 2V42C43 42.5523 42.5523 43 42 43H2C1.44772 43 1 42.5523 1 42V2Z" transform="translate(3 3)" strokeWidth="2"></path>

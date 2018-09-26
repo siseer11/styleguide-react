@@ -1,7 +1,7 @@
 import React from "react";
 
-export const Widgets = ({myClases}) => (
-  <svg className={myClases} id="widgets" viewBox="0 0 50 50" width="100%" height="100%">
+export const WidgetsSVG = ({classes}) => (
+  <svg className={classes} id="widgets" viewBox="0 0 50 50" width="100%" height="100%">
       <title>widgets</title>
       <g>
         <path d="M45 23C45 35.1503 35.1503 45 23 45C10.8497 45 1 35.1503 1 23C1 10.8497 10.8497 1 23 1C35.1503 1 45 10.8497 45 23Z" transform="translate(2 1)" strokeWidth="2"></path>

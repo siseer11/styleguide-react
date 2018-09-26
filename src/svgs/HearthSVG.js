@@ -1,9 +1,9 @@
 import React from "react";
 
-export const Hearth = ({ myClases }) => {
+export const HearthSVG = ({ classes }) => {
   return (
     <svg
-      className={myClases}
+      className={classes}
       id="clock"
       viewBox="0 0 30 29"
       width="100%"

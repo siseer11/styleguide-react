@@ -1,9 +1,9 @@
 import React from "react";
 
-export const Source = ({ myClases }) => {
+export const SourceSVG = ({ classes }) => {
   return (
     <svg
-      className={myClases}
+      className={classes}
       id="source"
       viewBox="0 0 50 50"
       width="100%"

@@ -1,7 +1,7 @@
 import React from 'react'
 import {NavAsideLink} from './navAsideLink';
 import PropTypes from 'prop-types';
-import {Close} from '../svgs/CloseSVG';
+import {CloseSVG} from '../svgs/CloseSVG';
 
 export const GbNavAside = ({links , userName, userImageUrl}) => (
 
@@ -11,7 +11,7 @@ export const GbNavAside = ({links , userName, userImageUrl}) => (
 
     <div className="nav-aside-content">
       <div className="nav-aside-close">
-        <Close myClases='nav-aside-close-icon gb-icon-medium gb-icon-white-opacity-50'/>
+        <CloseSVG classes='nav-aside-close-icon gb-icon-medium gb-icon-white-opacity-50'/>
       </div>
       <ul className="nav-aside-content-top">
         {

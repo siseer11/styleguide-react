@@ -1,6 +1,6 @@
 import React from "react";
-import {Source} from '../svgs/SourceSVG';
-import {Clock} from '../svgs/ClockSVG';
+import {SourceSVG} from '../svgs/SourceSVG';
+import {ClockSVG} from '../svgs/ClockSVG';
 import PropTypes from 'prop-types';
 
 export const GbCardLabel = ({ iconColor, txtColor , source , time , category}) => (
@@ -13,7 +13,7 @@ export const GbCardLabel = ({ iconColor, txtColor , source , time , category}) =
 
 const SourceLabel = ({ iconColor, txtColor , source }) => (
   <div className="card-label-item">
-    <Source myClases={`gb-label-icon gb-icon-small ${iconColor}`} />
+    <SourceSVG classes={`gb-label-icon gb-icon-small ${iconColor}`} />
     <a href="#" className={`${txtColor} gb-label`}>
       {source}
     </a>
@@ -22,7 +22,7 @@ const SourceLabel = ({ iconColor, txtColor , source }) => (
 
 const ClockLabel = ({ iconColor, txtColor , time}) => (
   <div className="card-label-item">
-    <Clock myClases={`gb-label-icon gb-icon-small ${iconColor}`} />
+    <ClockSVG classes={`gb-label-icon gb-icon-small ${iconColor}`} />
     <p className={`${txtColor} gb-label`}>{time}</p>
   </div>
 );

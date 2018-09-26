@@ -1,8 +1,8 @@
 import React from "react";
 
-export const Close = ({ myClases }) => (
+export const CloseSVG = ({ classes }) => (
   <svg
-    className={myClases}
+    className={classes}
     id="close"
     viewBox="0 0 38 37"
     width="100%"

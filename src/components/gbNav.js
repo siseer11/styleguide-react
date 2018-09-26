@@ -1,16 +1,16 @@
 import React from "react";
-import {BurgerMenu} from '../svgs/BurgerMenuSVG';
-import {SmallLogo} from '../svgs/SmallLogoSVG'
+import {BurgerMenuSVG} from '../svgs/BurgerMenuSVG';
+import {SmallLogoSVG} from '../svgs/SmallLogoSVG'
 
 export const GbNavBar = props => (
   <div className="gb-navbar gb-background-primary">
     <div className="left-content">
       <a href="#" className="gb-icon-medium gb-icon-white">
-        <BurgerMenu />
+        <BurgerMenuSVG />
       </a>
     </div>
     <div className="center-content">
-      <SmallLogo myClases="gb-logo-small gb-icon-fill-white" />
+      <SmallLogoSVG classes="gb-logo-small gb-icon-fill-white" />
     </div>
     <div className="right-content">
       {props.right &&

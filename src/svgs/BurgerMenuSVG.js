@@ -1,8 +1,8 @@
 import React from "react";
 
-export const BurgerMenu = ({ myClases }) => (
+export const BurgerMenuSVG = ({ classes }) => (
   <svg
-    className={myClases}
+    className={classes}
     id="menu"
     viewBox="0 0 42 34"
     width="100%"
