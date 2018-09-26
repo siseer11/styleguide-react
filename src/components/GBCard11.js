@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {ClockSVG} from './svgs/ClockSVG';
 import {SourceSVG} from './svgs/SourceSVG';
 
 export const GBCard11 = ({ backgroundImg, title, source, time, category }) => {
     return (
-        <div className='component-to-copy gb-card-11' style={{ backgroundImage: `url(${backgroundImg})` }}>
+        <div className='gb-card-11' style={{ backgroundImage: `url(${backgroundImg})` }}>
             <div className='card-11-content'>
                 <h1 className='card-title gb-title-large gb-text-white'>{title}</h1>
                 <div className="gb-card-label">
@@ -23,4 +24,12 @@ export const GBCard11 = ({ backgroundImg, title, source, time, category }) => {
             </div>
         </div>
     );
+};
+
+GBCard11.propTypes = {
+    backgroundImage: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    source: PropTypes.string.isRequired,
+    time: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired
 };

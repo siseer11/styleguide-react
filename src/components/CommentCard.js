@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {ClockSVG} from './svgs/ClockSVG';
 import {HeartSVG} from './svgs/HeartSVG';
 
 export const CommentCard = ({ authorName, date, time, numHearts, content }) => {
     return (
-        <div className='component-to-copy gb-comment-card'>
+        <div className='gb-comment-card'>
             <div className='user-avatar-wrapper'>
                 <a href='#' className='gb-avatar gb-avatar-large user-avatar'/>
             </div>
@@ -28,4 +29,12 @@ export const CommentCard = ({ authorName, date, time, numHearts, content }) => {
             </div>
         </div>
     );
+};
+
+CommentCard.propTypes = {
+    authorName: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    time: PropTypes.string.isRequired,
+    numHearts: PropTypes.number.isRequired,
+    content: PropTypes.string.isRequired
 };
