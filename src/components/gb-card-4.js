@@ -1,61 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {ClockSVG} from './svgs/ClockSVG';
-import {SourceSVG} from './svgs/SourceSVG';
-
+import { CardFourList } from './gb-card-4-subcard';
 import '../style/gb-style.css';
 
-const CardfourList = ({ heading, source, date, image }) => {
-
+export const CardFour = ({ data }) => {
   return (
 
-
-<li className='gb-card-four-sub-card'>
-<div className='gb-card-four-sub-card-info'>
-  <h2 className='gb-title-medium'>{heading}</h2>
-  <ul className='posted-info'>
-    <li className='posted-by'>
-    <SourceSVG classes="gb-label-icon gb-icon-black-opacity-30 gb-icon-small"/>
-      <a className='gb-text-black' href='www.globuzzer.com'>{source}</a>
-    </li>
-    <li className='posted-at'>
-       <ClockSVG classes="gb-label-icon gb-icon-black-opacity-30 gb-icon-small"/>
-      <p>{date}</p>
-    </li>
-  </ul>
-</div>
-<div className='gb-card-four-sub-card-image'>
-  <img src={image} alt='story-one'/>
-</div>
-</li>
-      );
-  
-    }
-
-export const CardFour = ({data}) => {
-  return (
-     
-      <div className='component-to-copy gb-card-four-wrapper'>
+    <div className='component-to-copy gb-card-four-wrapper'>
       <ul className='gb-card-four-sub-cards'>
-        
         {
-         data.map((cardlist) => (
-        <CardfourList 
-        heading= {cardlist.heading}
-        source= {cardlist.source}
-        date= {cardlist.date}
-        image= {cardlist.image}
-        />
-       ) )
-         }
-       
+          data.map((cardlist) => (
+            <CardFourList
+              heading={cardlist.heading}
+              source={cardlist.source}
+              date={cardlist.date}
+              image={cardlist.image}
+            />
+          ))
+        }
       </ul>
     </div>
 
-);
+  );
 };
 
 CardFour.propTypes = {
-  data : PropTypes.arrayOf(PropTypes.array).isRequired
+  data: PropTypes.arrayOf(PropTypes.array).isRequired
 }
-
