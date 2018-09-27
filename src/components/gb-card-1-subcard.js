@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../style/gb-style.css';
+import { Button } from './Button';
 
-export const CardOneLi = ({ follower, category, background }) => {
+export const CardOneLi = ({ follower, category, background, buttonLink, buttonClass, buttonValue }) => {
 
   return (
 
@@ -10,8 +11,12 @@ export const CardOneLi = ({ follower, category, background }) => {
       <div className="gb-card-one-info">
         <p className="gb-phone-title-tiny gb-title-large">{category}</p>
         <div className="gb-card-one-btn-wrapper">
-          <input className="gb-btn gb-btn-small gb-btn-white" value="following" type="button" /> </div>
-
+          <Button
+            link= {buttonLink}
+            classes={buttonClass}
+            children={buttonValue}
+          />
+        </div>
       </div>
 
       <div className="gb-card-one-avatars-wrapper">

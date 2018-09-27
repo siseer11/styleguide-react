@@ -11,9 +11,14 @@ export const CardOne = ({ card }) => {
         {
           card.map((cardlist) => (
             <CardOneLi
+              
+              
               follower={cardlist.follower}
               category={cardlist.category}
               background={cardlist.background}
+              buttonLink= {cardlist.buttonLink}
+              buttonValue= {cardlist.buttonValue}
+              buttonClass= {cardlist.buttonClass}
             />
           ))
         }
