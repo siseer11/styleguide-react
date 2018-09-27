@@ -1,13 +1,18 @@
 import React from 'react';
 import '../style/gb-style.css';
 import PropTypes from 'prop-types';
+import { Button } from './Button';
 
-export const CardTwo = ({ category, background, followerCount, follower }) => {
+export const CardTwo = ({ category, background, followerCount, follower, buttonLink, buttonClass, buttonValue }) => {
   return (
 
     <div className="gb-card-two-wrapper" style={{ backgroundImage: `url(${background})` }}>
       <h2 className="gb-title-xx-large gb-text-uppercase">{category}</h2>
-      <input className="gb-btn gb-btn-small gb-btn-white" value="following" type="button" />
+          <Button
+            link= {buttonLink}
+            classes={buttonClass}
+            children={buttonValue}
+          />
       <div className="gb-avatars">
         <h4 className="gb-title-tiny">{followerCount}</h4>
         <div className="gb-card-two-avatars-container">
