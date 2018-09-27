@@ -5,8 +5,13 @@ import { GbCardLabel } from "./gbCardLabel";
 export const GbCard50 = ({ background, type , source , postedTime , category , children}) => (
   <div
     className={`gb-card-12 ${
-      type == "half-left" ? "gb-card-12-image-left" : "gb-card-12-image-right"
-    } ${type == "full" ? "gb-card-12-full-desktop" : ""}`}
+      type == "half-left" ? 
+        "gb-card-12-image-left" 
+        : type == 'full' ?
+          "gb-card-12-full-desktop" 
+          : "gb-card-12-image-right"
+      }`
+    }
   >
     <div
       className="card-image gb-phone-hide"
